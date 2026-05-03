@@ -19,7 +19,7 @@ let homePage;
 
 
 
-  test.only('TC01 - Verify Search for Property', async ({ page }) => {
+  test('TC01 - Verify Search for Property', async ({ page }) => {
 
     await propertySearch.searchForLocation('Aberdeen, UK');
     
