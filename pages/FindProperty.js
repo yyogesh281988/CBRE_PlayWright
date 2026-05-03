@@ -1,4 +1,5 @@
-const {expect} = require('@playwright/test');
+import { expect } from '@playwright/test';
+
 class FindProperty {
   constructor(page) {
     this.page = page;
@@ -99,4 +100,4 @@ class FindProperty {
   }
 }
 
-module.exports = { FindProperty };
+export { FindProperty };

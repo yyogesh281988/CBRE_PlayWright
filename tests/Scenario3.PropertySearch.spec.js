@@ -1,5 +1,5 @@
-const { test, expect } = require('@playwright/test');
-const { FindPro, FindProperty } = require('../pages/FindProperty');
+import { test, expect } from '@playwright/test';
+import { FindProperty } from '../pages/FindProperty.js';
 import { HomePage } from '../pages/homePage.js';
 
 

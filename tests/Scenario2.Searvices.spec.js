@@ -1,5 +1,5 @@
-const { test, expect } = require('@playwright/test');
-const { ServicesPage } = require('../pages/servicesPage.js');
+import { test, expect } from '@playwright/test';
+import { ServicesPage } from '../pages/servicesPage.js';
 import { HomePage } from '../pages/homePage.js';
 
 test.describe('CBRE Services Page Tests', () => {

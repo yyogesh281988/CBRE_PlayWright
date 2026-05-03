@@ -52,4 +52,4 @@ class ServicesPage {
 
 }
 
-module.exports = { ServicesPage };
+export { ServicesPage };

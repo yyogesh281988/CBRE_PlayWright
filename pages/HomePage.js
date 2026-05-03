@@ -57,4 +57,4 @@ async getTitle() {
     return this.page.title();
   }
 
-}module.exports = { HomePage };
+}export { HomePage };
