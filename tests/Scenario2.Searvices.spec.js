@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { ServicesPage } from '../pages/servicesPage.js';
-import { HomePage } from '../pages/homePage.js';
+import { ServicesPage } from '../pages/ServicesPage.js';
+import { HomePage } from '../pages/HomePage.js';
 
 test.describe('CBRE Services Page Tests', () => {
 

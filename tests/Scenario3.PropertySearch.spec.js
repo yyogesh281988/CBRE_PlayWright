@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { FindProperty } from '../pages/FindProperty.js';
-import { HomePage } from '../pages/homePage.js';
+import { HomePage } from '../pages/HomePage.js';
 
 
 test.describe('Scenario 3: Property Search Functionality', () => {
