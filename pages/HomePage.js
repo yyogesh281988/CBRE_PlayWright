@@ -9,6 +9,12 @@ class HomePage{
     async gotoUrl()
     {
         await this.page.goto('https://www.cbre.co.uk/');
+        await this.page.waitForLoadState('networkidle');
+        // Wait for menu items to load, as they might be loaded via JS
+        await this.page.waitForFunction(() => {
+            const menuItems = document.querySelectorAll('[role="menuitem"]');
+            return menuItems.length > 0;
+        }, { timeout: 10000 });
     }
 
     async acceptCookiesIfPresent() {

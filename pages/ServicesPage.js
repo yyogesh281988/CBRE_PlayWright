@@ -42,6 +42,7 @@ class ServicesPage {
  * Click on seeOverview
  */
   async clickOnSeeOverview() {
+    await this.page.getByText('See Overview').waitFor({ state: 'visible', timeout: 10000 });
     await Promise.all([
       this.page.waitForNavigation({ waitUntil: 'load' }),
       this.page.getByText('See Overview').click(),
